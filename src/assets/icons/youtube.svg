@@ -1,0 +1,16 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="line-md:youtube">
+<path id="Vector" d="M14.5114 12.6382L22.7614 17.4507L14.5114 22.2632V12.6382Z" fill="url(#paint0_linear_388_18753)"/>
+<path id="Vector_2" d="M17.2614 7.82568C29.6364 7.82568 29.6364 7.82568 29.6364 17.4507C29.6364 27.0757 29.6364 27.0757 17.2614 27.0757C4.88641 27.0757 4.88641 27.0757 4.88641 17.4507C4.88641 7.82568 4.88641 7.82568 17.2614 7.82568Z" stroke="url(#paint1_linear_388_18753)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_388_18753" x1="18.6364" y1="12.6382" x2="18.6364" y2="22.2632" gradientUnits="userSpaceOnUse">
+<stop stop-color="#31468A"/>
+<stop offset="1" stop-color="#8896C5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_388_18753" x1="17.2614" y1="7.82568" x2="17.2614" y2="27.0757" gradientUnits="userSpaceOnUse">
+<stop stop-color="#31468A"/>
+<stop offset="1" stop-color="#8896C5"/>
+</linearGradient>
+</defs>
+</svg>

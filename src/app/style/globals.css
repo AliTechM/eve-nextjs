@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.general-padding {
+  @apply px-10 lg:px-16 3xl:px-24;
+}
+.active-lang {
+  @apply text-white/50 font-normal;
+}
+.inner-head {
+  @apply text-white md:text-2xl xl:text-[40px] font-semibold font-inter uppercase leading-[4.563rem];
+}
+.labels {
+  @apply text-center text-white text-2xl font-light font-inter leading-[4.563rem];
+}
+.inputs {
+  @apply text-center text-white text-2xl font-medium font-inter leading-[4.563rem];
+}
+.calc_inputs {
+  @apply text-left text-white text-xl md:text-2xl font-medium font-inter leading-[4.563rem];
+}
+.placeholders {
+  @apply text-center text-white/60 text-lg font-medium font-inter leading-[4.563rem];
+}
+.icons-label {
+  @apply text-white text-xs xl:text-base 3xl:text-xl font-bold font-montserrat leading-6 text-center;
+}
+.pages-topH {
+  @apply text-white text-4xl font-extrabold font-alexandria;
+}
+.methodology-cardH {
+  @apply text-white text-xl font-extrabold font-alexandria capitalize leading-9;
+}
+.methodology-cardP {
+  @apply text-white/70 text-lg font-medium font-inter capitalize leading-8;
+}
+.table-label {
+  @apply text-white text-xl font-semibold font-montserrat leading-[2.438rem];
+}
+.table-data {
+  @apply text-white text-lg font-normal text-left font-montserrat leading-[2.238rem];
+}
+/* Footer  */
+.footer-head {
+  @apply text-[#04080f] text-xs 3xl:text-base font-semibold font-montserrat leading-8 relative;
+}
+.footer-head::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #293f84;
+  border-radius: 50%;
+  top: 38%;
+  left: -1rem;
+}
+
+/* Styles for custom select */
+
+.select-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../../assets/icons/selectArrowDark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.start_back {
+  background-image: url("../../assets/images/operrations.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.hero_back {
+  background-image: url("../../assets/images/city.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.invest_back {
+  background-image: url("../../assets/images/investment.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.journey_back {
+  background-image: url("../../assets/images/journeyBg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.report_back {
+  background-image: url("../../assets/images/report.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+/* mortage  */
+.mortgage_back {
+  background-image: url("../../assets/images/city2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.blueRect_back {
+  background-image: url("../../assets/images/blue_rect.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.citizen_back {
+  background-image: url("../../assets/images/city3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.benefitCard p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.benefitCard h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clientCard p {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.benefitCard:hover div {
+  color: #2a3f85;
+  background-color: white;
+}
+
+.benefitCard:hover,
+.benefitCard:hover div {
+  transition: 0.5s;
+}
+
+.citizen .swiper-pagination-bullet {
+  background-color: white !important; /* Change dot color */
+  opacity: 1 !important;
+  display: inline-block !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.citizen .swiper-pagination-bullet-active {
+  background-color: #2a3f85 !important; /* Active dot color */
+}
+
+.mortgage .swiper-pagination-bullet {
+  background-color: white !important; /* Change dot color */
+  opacity: 1 !important;
+  display: inline-block !important;
+  width: 30px !important;
+  height: 1px !important;
+  border-radius: 0px !important;
+}
+
+.mortgage .swiper-pagination-bullet-active {
+  height: 3px !important;
+}
+
+.invest_carousel .swiper-button-next,
+.invest_carousel .swiper-button-prev {
+  top: 240px !important;
+  color: white !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.invest_carousel .swiper-button-next {
+  left: 60% !important;
+}
+
+.invest_carousel .swiper-button-prev {
+  left: 35% !important;
+}
+
+.invest_carousel .swiper-button-next svg,
+.invest_carousel .swiper-button-prev svg {
+  display: none !important;
+}
+
+.invest_carousel .swiper-button-next:hover,
+.invest_carousel .swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.invest_carousel .swiper-pagination-bullet {
+  background-color: #d7e0ff54 !important; /* Change dot color */
+  opacity: 1 !important;
+  display: inline-block !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.invest_carousel .swiper-pagination-bullet-active {
+  background-color: white !important; /* Active dot color */
+}
+
+@media only screen and (max-width: 640px) and (min-width: 500px) {
+  .clientCard {
+    left: 34%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  .clientCard {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .calc_inputs {
+    @apply text-left text-white text-lg font-medium font-inter leading-[4.563rem];
+  }
+  .pages-topH {
+    @apply text-white text-2xl font-extrabold font-alexandria;
+  }
+  .invest_carousel .swiper-button-next {
+    left: 60% !important;
+  }
+
+  .invest_carousel .swiper-button-prev {
+    left: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .methodology-cardH {
+    @apply text-white text-base font-bold font-alexandria capitalize leading-9;
+  }
+  .methodology-cardP {
+    @apply text-white/70 text-sm font-medium font-inter capitalize leading-8;
+  }
+}
+
+/* investments  */
+
+.investment .swiper-slide {
+  opacity: 1;
+}
+
+.before-after-slider {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+nextjs-portal {
+  display: none;
+}

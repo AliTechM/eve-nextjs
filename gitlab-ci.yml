@@ -1,0 +1,41 @@
+# workflow:
+#   rules:
+#     - if: $CI_COMMIT_BRANCH != "dev" 
+#       when: never
+#     - when: always 
+
+variables:
+    DEV_SERVER : "35.154.63.60"
+    IMAGE_NAME: $CI_REGISTRY_IMAGE
+
+stages:
+  - Testing 
+  - Build_Image
+  - Push_Image 
+  - Deploy_to_dev
+  - Deploy_to_staging
+  - Deploy_to_Prod
+
+
+# Test:
+#   stage: Testing
+#   script:
+#     - echo "testing job " 
+
+Build_Image: 
+  stage : Build_Image
+  tags:
+    - staging
+    - server
+    - shell
+  before_script:
+    - export PACKAGE_JSON_VERSION=$(cat app/package.json | jq -r .version) 
+    - export IMAGE_TAG=$PACKAGE_JSON_VERSION-Build.$CI_PIPELINE_IID 
+  script:
+    - echo "IMAGE_TAG=$IMAGE_TAG" >>build.env
+    - docker image build -t  $IMAGE_NAME:$IMAGE_TAG . 
+  after_script:
+    - echo "IMAGE_TAG=$IMAGE_TAG" >>build.env
+  artifacts:
+    reports:
+      dotenv: build.env
